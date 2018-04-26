@@ -10,8 +10,12 @@
 		7103015F208E878600CA00EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103015E208E878600CA00EF /* AppDelegate.swift */; };
 		71030161208E878600CA00EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71030160208E878600CA00EF /* ViewController.swift */; };
 		71030164208E878600CA00EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71030162208E878600CA00EF /* Main.storyboard */; };
-		71030166208E878600CA00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71030165208E878600CA00EF /* Assets.xcassets */; };
 		71030169208E878600CA00EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71030167208E878600CA00EF /* LaunchScreen.storyboard */; };
+		71030171208E87ED00CA00EF /* VendingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71030170208E87ED00CA00EF /* VendingItemCell.swift */; };
+		71030173208F6F1000CA00EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71030172208F6F1000CA00EF /* Assets.xcassets */; };
+		71030175208F7B1400CA00EF /* VendingInventory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71030174208F7B1400CA00EF /* VendingInventory.plist */; };
+		71030177208F7D2A00CA00EF /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71030176208F7D2A00CA00EF /* VendingMachine.swift */; };
+		710301792092542C00CA00EF /* DepositController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710301782092542C00CA00EF /* DepositController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +23,13 @@
 		7103015E208E878600CA00EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71030160208E878600CA00EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71030163208E878600CA00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		71030165208E878600CA00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71030168208E878600CA00EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7103016A208E878600CA00EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71030170208E87ED00CA00EF /* VendingItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingItemCell.swift; sourceTree = "<group>"; };
+		71030172208F6F1000CA00EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/VendingMachine-StarterFiles-2/VendingMachine/Assets.xcassets"; sourceTree = "<group>"; };
+		71030174208F7B1400CA00EF /* VendingInventory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = VendingInventory.plist; path = "../../../../Downloads/VendingMachine-StarterFiles-2/VendingMachine/VendingInventory.plist"; sourceTree = "<group>"; };
+		71030176208F7D2A00CA00EF /* VendingMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
+		710301782092542C00CA00EF /* DepositController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				7103015E208E878600CA00EF /* AppDelegate.swift */,
 				71030160208E878600CA00EF /* ViewController.swift */,
+				71030170208E87ED00CA00EF /* VendingItemCell.swift */,
+				71030176208F7D2A00CA00EF /* VendingMachine.swift */,
+				710301782092542C00CA00EF /* DepositController.swift */,
 				71030162208E878600CA00EF /* Main.storyboard */,
-				71030165208E878600CA00EF /* Assets.xcassets */,
+				71030172208F6F1000CA00EF /* Assets.xcassets */,
 				71030167208E878600CA00EF /* LaunchScreen.storyboard */,
 				7103016A208E878600CA00EF /* Info.plist */,
+				71030174208F7B1400CA00EF /* VendingInventory.plist */,
 			);
 			path = "VendingMachine App";
 			sourceTree = "<group>";
@@ -123,7 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71030169208E878600CA00EF /* LaunchScreen.storyboard in Resources */,
-				71030166208E878600CA00EF /* Assets.xcassets in Resources */,
+				71030175208F7B1400CA00EF /* VendingInventory.plist in Resources */,
+				71030173208F6F1000CA00EF /* Assets.xcassets in Resources */,
 				71030164208E878600CA00EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +150,9 @@
 			files = (
 				71030161208E878600CA00EF /* ViewController.swift in Sources */,
 				7103015F208E878600CA00EF /* AppDelegate.swift in Sources */,
+				710301792092542C00CA00EF /* DepositController.swift in Sources */,
+				71030171208E87ED00CA00EF /* VendingItemCell.swift in Sources */,
+				71030177208F7D2A00CA00EF /* VendingMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
