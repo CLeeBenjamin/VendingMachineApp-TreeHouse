@@ -4,4 +4,4 @@ A simple app that models a vending machine in the real world.
 - Multiple views
 - UI Controls
 
-https://giphy.com/gifs/35EsMMOdRXwuC1r6qh/html5
+https://media.giphy.com/media/35EsMMOdRXwuC1r6qh/giphy.mp4
